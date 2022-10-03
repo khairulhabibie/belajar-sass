@@ -1,0 +1,25 @@
+/* ----------
+mixin
+simple mixin
+---------- */
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+    }
+  }
+  /* ----------
+  argumen pada mixin
+  ---------- */
+  @mixin flex-box($direction: row, $justify: center) {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }
+  
+  
+  

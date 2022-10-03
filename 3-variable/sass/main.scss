@@ -1,0 +1,24 @@
+// SASS variable
+// $primary-key: aliceblue;
+// $secondary-color: #aaa;
+// $text-color: darkblue;
+
+// body {
+//   $primary-key: green !global; //set jadi variable global
+//   background-color: $primary-key;
+// }
+
+// h1 {
+//   color: $primary-key;
+// }
+
+
+// Map
+$alert: (
+  'danger': red,
+  'succes': green,
+  'warning': orange,
+);
+h1 {
+  color: map-get($map: $alert, $key: warning);
+}
